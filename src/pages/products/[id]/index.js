@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { HiArrowSmRight } from "react-icons/hi";
+import { HiArrowSmLeft } from "react-icons/hi";
 
 export default function ProductDetail({ product}){
     console.log("-product-",product)
@@ -15,9 +15,9 @@ export default function ProductDetail({ product}){
         
        
         >
-            <link href="/products"className="flex justify-self-start mb-10">
-                <HiArrowSmRight />
-            </link>
+            <Link href="/products"className="flex justify-self-start mb-10">
+                <HiArrowSmLeft />
+            </Link>
             <div className="w-full md:w-1/2">
                 <p className="text-4xl text-center font-bold">{product.title}</p>
                 <Image 
